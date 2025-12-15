@@ -21,6 +21,7 @@ function addFila() {
         numProductos--;
         var contador = document.getElementById("numProductos");
         contador.innerHTML = "<b>"+numProductos+"</b>";
+        calcularTotal();
 }
 celda1.appendChild(botonEliminar);
 
@@ -33,7 +34,7 @@ celda3.appendChild(caja2);
 var caja3 = addinput("cantidad", "number");
 celda4.appendChild(caja3);
 caja3.value = 0;
-caja3.onblur = function() {
+caja3.oninput = function() {
         var cantidad = document.getElementById(this.id).value;
         var valorid = this.id.substring(8);
         if (cantidad=="" || isNaN(cantidad)){
@@ -56,7 +57,7 @@ caja3.onblur = function() {
 
 var caja4 = addinput("ValorUnitario", "number");
 caja4.value = 0;
-caja4.onblur = function() {
+caja4.oninput = function() {
         var ValorUnitario = document.getElementById(this.id).value;     
         var valorid = this.id.substring(13);
         if (ValorUnitario=="" || isNaN(ValorUnitario)){
