@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tienda</title>
+</head>
+<body>
+
+    <table border="1" align="center" cellpadding="10" cellspacing="5">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <h1>Calculadora de Tienda</h1>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b><label for="productos">Producto:</label></b></td>
+                <td><select id="productos"></select></td>
+            </tr>
+            <tr>
+                <td><b><label for="cantidad">Cantidad:</label></b></td>
+                <td><input type="text" id="cantidad" placeholder="Ej: 1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="calcular">Calcular Total</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <p><b>Total a pagar: <span id="total">0</span> COP</b></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/funcionesTienda.js"></script>
+
+</body>
+</html>
