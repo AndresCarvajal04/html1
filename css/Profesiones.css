@@ -1,0 +1,134 @@
+body {
+    margin : 0px;
+    padding : 0px;
+    width: 100%;
+    height: 100%;
+    
+}
+/* contenedor principal: relativo para posicionar las tarjetas */
+#id1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden; /* evita que tarjetas se salgan del contenedor */
+}
+
+/* reset útil */
+* {
+    box-sizing: border-box;
+}
+
+.girar {
+    width: 100%;
+    height: 100%;
+    position: relative; /* relativo para alojar caras absolutas dentro */
+    transform-style: preserve-3d; /* habilita el 3D para hijos */
+    -webkit-transform-style: preserve-3d;
+    transition: transform 0.6s; /* animación del giro */
+    -webkit-transition: -webkit-transform 0.6s;
+    transform-origin: center center;
+    will-change: transform;
+} 
+.card:hover .girar {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+/* support click-to-flip by toggling .flipped on the .card */
+.card.flipped .girar {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+} 
+.card {
+    width: 220px; /* tamaño fijo para mantener proporciones y evitar recortes extraños */
+    height: 300px;
+    perspective: 1000px; /* profundidad para el efecto 3D */
+    position: absolute; /* las clases de posición (top/right/left/bottom) siguen aplicando */
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+} 
+
+.interior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; /* evita que la cara trasera se vea al girar */
+    overflow: hidden;
+    border: none; /* quitar bordes globales inesperados */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+} 
+
+.interior.front {
+    background-size: contain; /* muestra la imagen completa en lugar de recortarla */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #222; /* color de relleno cuando la imagen no llena todo el contenedor */
+} 
+
+.interior.back {
+    transform: rotateY(180deg); /* cara trasera girada 180 grados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #222;
+}
+.superior {
+    top: 4%;
+}
+.inferior {
+    bottom: 4%;
+}
+.medioArriba {
+    top: 8%;
+    right: 45%;
+    transform-style: preserve-3d;
+} 
+.medioAbajo {
+   bottom: 8%;
+    left: 45%;
+    transform-style: preserve-3d;
+} 
+
+.izquierdaArriba{ 
+    top: 8%;
+    left: 10%;
+    transform-style: preserve-3d;
+} 
+.derechaArriba{
+    top: 8%;
+    right: 10%;
+    background-image: url();
+    background-size: cover;
+    transform-style: preserve-3d;
+
+}
+.izquierdaAbajo{
+    bottom: 8%;
+    left: 10%;
+    background-image: url();
+    background-size: cover;
+    transform-style: preserve-3d;
+}
+  
+.derechaAbajo{
+    bottom: 8%;
+    right: 10%;
+    transform-style: preserve-3d;
+}
+
+#id1 {
+    background-color: rgb(119, 0, 255);;
+}
