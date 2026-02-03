@@ -1,0 +1,163 @@
+body {
+    display: flex;
+   
+}
+.header {
+    background-color: #f8f9fa;
+    gap: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;}
+
+.logo {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 110px;
+    left: 300px;
+    right: 300px;
+    bottom: 200px;
+}
+
+.pagesContainers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+   /* position: absolute;
+    top: 110px;
+    left: 300px;
+    right: 300px;
+    bottom: 200px;*/
+    background-color: #ffffff;
+    border: 8px solid #ccc;
+    justify-content: space-evenly;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.TituloEmpleados{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #ffffff;
+    border: 8px solid #ccc;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+   /* position: absolute;
+    top: 110px;
+    left: 300px;
+    right: 300px;
+    bottom: 200px;*/
+    z-index: 1;
+}
+
+.Cuadro1{
+    display: flex;
+    align-items:center;
+    border: 4px solid #000000;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 50%;
+    justify-content: space-evenly;
+    background-image: url("https://i1.sndcdn.com/artworks-HLlqmQQ3FERlTeGb-dHzC8A-t500x500.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.Cuadro2{
+    display: flex;
+    align-items:flex-center;
+    border: 4px solid #000000;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    width: 20%;
+    height: 50%;
+     justify-content: space-evenly;
+    background-image: url("https://m.media-amazon.com/images/I/51ixBkY9BWL._UXNaN_FMjpg_QL85_.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Cuadro3{
+    display: flex;
+    align-items:flex-center;
+    border: 4px solid #000000;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 50%;
+     justify-content: space-evenly;
+    background-image: url("https://www.elespectador.com/resizer/BHPQ2HwZg-xQEoj9y-4_hxnhDtE=/arc-anglerfish-arc2-prod-elespectador/public/NCHY4CD7J5DE5CIN3453IABMEU.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.Cuadro4{
+    display: flex;
+    align-items:flex-center;
+    border: 4px solid #000000;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 50%;
+     justify-content: space-evenly;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlkeyyNe_qSMi0gtkW_WxeB-xSoEnDIFBl9A&s");
+    background-size: cover;
+    background-position: center;
+}
+
+.BarraDeNavegacion {
+    display: flex;
+    justify-content:left;
+    gap: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-left: 15px;
+    border: 8px solid #ccc;
+    position:absolute;
+    top: 210px;
+    width: 220px;
+    height: 400px;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.Logintodo{
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    background-color: #f8f9fa;
+    border: 8px solid #ccc;
+    width: 220px;
+    height: 400px;
+    justify-content: center;
+    gap: 10px; 
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
