@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Asistencia</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <td>Seleccionar Ficha:</td>
+        <td>
+            <select id="fichas" onchange="cargarAprendices()">
+                <option value="">-- Seleccione una ficha --</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nombre del Aprendiz</th>
+            <th>Asistencia</th>
+        </tr>
+    </thead>
+    <tbody id="ListaAprendices">
+    </tbody>
+</table>
+
+<br>
+
+<table border="1">
+    <tr>
+        <td>
+            <input type="button" value="Guardar Asistencia" onclick="guardarAsistencia()">
+        </td>
+    </tr>
+</table>
+
+<script src="js/funcionesAsistencia.js"></script>
+
+</body>
+</html>

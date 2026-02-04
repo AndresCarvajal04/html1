@@ -1,0 +1,12 @@
+Arroz,2500
+Leche,3000
+Huevos,15000
+Café,12000
+Azúcar,2800
+Pan,2000
+Aceite,8000
+Sal,1500
+Lentejas,2200
+Frijoles,3500
+Pasta,1800
+Atún,4500
