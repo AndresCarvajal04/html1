@@ -1,3 +1,0 @@
-001 ; Jabon Fabuloso ; 5
-002 ; Jabon No Fabuloso ; 6
-003 ; Shampoo ; 10
